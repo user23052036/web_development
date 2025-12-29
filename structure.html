@@ -16,16 +16,158 @@
             <h2>Basic Structure</h2>
             <p>An HTML document typically starts with a doctype declaration followed by the <code>&lt;html&gt;</code> element, which contains the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> sections.</p>
         </section>
+
+        <article>
+            <h2>Doctype Declaration</h2>
+            <p>The doctype declaration <code>&lt;!DOCTYPE html&gt;</code> defines the document type and version of HTML being used.</p>
+        </article>
         
         <section>
             <h2>Head Section</h2>
             <p>The <code>&lt;head&gt;</code> section includes meta-information about the document, such as its title, character set, and links to stylesheets or scripts.</p>
         </section>
+
+        <aside>
+            <h2>Aside Section</h2>
+            <p>The <code>&lt;aside&gt;</code> element is used for content that is tangentially related to the main content, such as sidebars or call-out boxes.</p>
+        </aside>
         
         <section>
             <h2>Body Section</h2>
             <p>The <code>&lt;body&gt;</code> section contains the content that is displayed on the webpage, including text, images, links, and other media.</p>
         </section>
+
+        <div>
+            <h2>Div Element</h2>
+            <p>The <code>&lt;div&gt;</code> element is a generic container used to group together related content for styling or scripting purposes.</p>
+
+            <ul>
+                <li>It is a block-level element.</li>
+                <ol>
+                    <li>Used to structure the webpage.</li>
+                    <li>Helps in applying CSS styles.</li>
+                </ol>
+                <li>Commonly used with CSS for layout and design.</li>
+                <li>Can contain other HTML elements.</li>
+        </div>
+
+        <div>
+            <!-- building tables in html-->
+             <table>
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+             </table>
+        </div>
+
+        <div>
+            <!-- explaining colspan in table-->
+             <table>
+                <thead>
+                    <th colspan="2">Header 1</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                        </tr>
+                </tbody>
+             </table>
+             <br/>
+                <p>The <code>colspan</code> attribute in the table header above allows the header to span across two columns.</p>   
+            <hr/>
+        </div>
+
+        <div>
+            <!-- creating a form -->
+                <form action="./action.php" method="post">
+
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Enter your name here">
+                    <br>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Enter your email here">
+                    <br>
+
+                    <label for="password">password:</label>
+                    <input type="password" placeholder="Enter your password here">
+                    <br>
+
+                    <!-- creating radio buttons -->
+                    <label for="male">
+                    <input type="radio" id="male" name="gender" value="male">Male
+                    </label>
+                    <br>
+
+                    <label for="female">
+                    <input type="radio" id="female" name="gender" value="female">Female
+                    </label>
+                    <br>
+
+                    <!-- the value gets passed to the server and the id is used to identify the selected option and the name is used to group the radio buttons. labels are used to associate text with the radio buttons and are used to display the text -->
+
+                    <!-- we can put the radio button inside the label, so that when we click the label, it selects the radio button -->
+
+                    <!-- creating checkbox-->
+                    <label for="math">
+                    <input type="checkbox" id="math" name="subject" value="math">Math
+                    </label>
+                    <br>
+                    <label for="science">
+                    <input type="checkbox" id="science" name="subject" value="science">Science
+                    </label>
+                    <br>
+                    <label for="history">
+                    <input type="checkbox" id="history" name="subject" value="history">History
+                    </label>  
+                    <br>
+                    <br>
+
+                    <!-- defining dropdown -->
+                    <label for="country">Select your country: </label>
+                    <select name="country" id="country">
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>  
+                        <option value="uk">UK</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <!-- name-> question, value-> answer sent to the server, id-> label binding and uniquely identifying only one element, class-> grouping multiple elements -->
+
+                    <textarea name="feedback" id="feedback" placeholder="Enter your feedback here" rows="5" cols="25"></textarea>
+                    <br>
+
+                    <input type="submit" value="Submit">
+                </form>
+                <!-- End of form -->
+        </div>
+
+        <span>>
+            <h2>Span Element</h2>
+            <p>The <code>&lt;span&gt;</code> element is an inline container used to mark up a part of a text or a document for styling or scripting.</p>            
+        </span>
+
     </main>
 
     <footer>
