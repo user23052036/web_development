@@ -170,8 +170,6 @@ Render Tree
      └── p  (black, font-size: 16px)
 ```
 
-![Image](https://web.dev/static/articles/critical-rendering-path/render-tree-construction/image/dom-cssom-are-combined-8de5805b2061e.png)
-
 ![Image](https://miro.medium.com/v2/resize%3Afit%3A1400/0%2A_mUaF4ho09lojJ7D.png)
 
 ![Image](https://webperf.tips/static/d77eb220c5dd10181dc361c4ff0051da/906b5/BrowserRenderingPipeline17.png)

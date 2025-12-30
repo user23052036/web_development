@@ -1,0 +1,25 @@
+/* h1{
+    color:#EBF5EE;
+}
+button{
+    background-color: #8B786D;
+    color:#EBF5EE;
+}
+body{
+    background-color: #283044;
+} */
+
+/*
+    css me jo bad me likha he uska priority jyada he... and complementary colours can be choose from colours.co..
+    for multiple elements we use class not id.. id are used for only one single element.
+*/
+*{
+    color:blue;
+}
+
+#headingTwo{
+    color:brown;
+}
+#headingThree{
+    color:darkslategrey;
+}
