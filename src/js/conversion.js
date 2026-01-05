@@ -2,6 +2,15 @@
 
 let score = "645ay6";
 
+Number("")        // 0
+Number(" ")       // 0
+Number(false)     // 0
+Number(true)      // 1
+NaN === NaN       // false 🤯
+Object.is(NaN, NaN) // true ✅
+// JavaScript tries VERY hard to become a number — until it can’t.
+// When it can’t → NaN.
+
 console.log(typeof(score)); // But this is NOT a function call: typeof is an operator, not a function.
 console.log(typeof score);
 

@@ -30,6 +30,16 @@ let s2 = s1;
 s2 = s2.toUpperCase();
 console.log("strings: s1 =", s1, ", s2 =", s2); // "hello", "HELLO"
 
+let str = "hello";
+str[0] = "H";
+
+console.log(str); // "hello"
+// toUpperCase() creates a new string in memory.
+// The original string stays untouched.
+
+// All string operations in JS return a new string.
+// The original string is never modified.
+
 // -----------------------------------------------------------------------------
 // SECTION 2: Objects & arrays (heap) — assignment copies the reference
 // -----------------------------------------------------------------------------
@@ -57,6 +67,20 @@ console.log("after nested mutation userTwo.nested.fav =", userTwo.nested.fav); /
 
 // identity check: same reference -> true
 console.log("userOne === userTwo ?", userOne === userTwo); // true
+
+// The object lives in the heap
+// userOne (on the stack) stores a reference
+// That reference is an engine-managed pointer/handle to the object
+
+// JS engines (V8, SpiderMonkey) use:
+// hidden pointers
+// object handles
+// moving GC (objects can move!)
+// So exposing real addresses would break GC.
+
+// In JavaScript, assigning an object copies its reference — an engine-managed handle to a heap object — not the object itself. Both variables point to the same heap allocation.”
+
+
 
 // -----------------------------------------------------------------------------
 // SECTION 3: How to create a shallow copy (so top-level becomes independent)
